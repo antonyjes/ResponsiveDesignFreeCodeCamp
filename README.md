@@ -1,2 +1,2 @@
 # ResponsiveDesignFreeCodeCamp
-Two projects about Flex and Grid Concepts
+Two projects about Flex and Grid concepts.
