@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+html{
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: #2793c1;
+    width: 100%;
+    justify-content: flex-end;
+    z-index: 10;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    text-align: center;
+}
+
+li{
+    margin: 0 5rem;
+}
+
+li a{
+    text-decoration: none;
+    color: #Bce5f7;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #112D39;
+}
+
+main h1{
+    font-size: 5rem;
+    font-weight: bold;
+    color: #Bce5f7;
+    text-align: center;
+}
+
+main p{
+    font-size: 2rem;
+    color: #2793c1;
+    text-align: center;
+}
+
+section{
+    text-align: center;
+    padding: 10rem 2rem;
+    background-color: #56b6df;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+section h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0b2733;
+    margin-bottom: 5rem;
+    margin-top: -60px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 2px solid #0b2733;
+    max-width: 500px;
+}
+
+.btn-show-all{
+    background-color: #112D39;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #2793c1;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+.projects-grid p{
+    font-size: 1.5rem;
+    color: #2793c1;
+    margin-top: -5px;
+    margin-bottom: 2rem;
+    background-color: #112D39;
+    padding: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #112D39;
+}
+
+footer h2{
+    font-size: 1.5rem;
+    color: #2793c1;
+}
+
+footer a{
+    font-size: 1.5rem;
+    color: #2793c1;
+    margin-left: 1rem;
+}
+
+@media (max-width: 768px){
+    #navbar{
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    ul{
+        flex-direction: column;
+        padding: 1rem 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    li{
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+    }
+
+    li:not(:first-child){
+        margin-top: 1rem;
+    }
+
+    li:not(:last-child){
+        border-bottom: 2px solid #F3d7c2;
+    }
+
+    main{
+        margin-top: 150px;
+    }
+}
